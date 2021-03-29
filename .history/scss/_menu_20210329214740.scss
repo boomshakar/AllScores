@@ -1,0 +1,135 @@
+.menu-btn {
+  position: fixed;
+  z-index: 1;
+  width: 28px;
+  height: 20px;
+  top: 0.8rem;
+  right: 0.7rem;
+  background: transparent;
+  cursor: pointer;
+  @include transition-mix;
+  &__burger {
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    right: 0.5rem;
+    top: 0.5rem;
+    background: pink;
+    border-radius: 5px;
+    @include transition-mix;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 28px;
+      height: 3px;
+      top: -8px;
+      background: $text-color;
+      border-radius: 5px;
+      @include transition-mix;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 28px;
+      height: 3px;
+      top: 8px;
+      background: $text-color;
+      border-radius: 5px;
+      @include transition-mix;
+    }
+
+    &.open {
+      transform: rotate(720deg);
+      background: transparent;
+
+      &::before {
+        transform: rotate(45deg) translate(5px, 8px);
+        background: $secondary-color;
+      }
+      &::after {
+        transform: rotate(-45deg) translate(3px, -7px);
+        background: $secondary-color;
+      }
+    }
+  }
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  visibility: hidden;
+  &.open {
+    visibility: visible;
+  }
+}
+
+.menu-nav {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  width: 100vw;
+  height: 100vh;
+  top: 50px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background: $primary-color;
+  opacity: 0.97;
+  transform: translateY(-100%);
+  @include transition-mix;
+
+  &.open {
+    transform: translateY(0);
+  }
+  &__time {
+    padding: 1.5rem 1.5rem 1rem 1.5rem;
+    line-height: 1.2;
+    font-size: 12px;
+  }
+
+  &__item {
+    transform: translateX(100vw);
+    border-bottom: 1px solid rgb(102, 96, 96);
+    @include transition-mix;
+    &:nth-of-type(1) {
+      border-top: 1px solid rgb(102, 96, 96);
+    }
+    &.open {
+      transform: translateX(0);
+    }
+    &.active > a {
+      color: $secondary-color;
+    }
+  }
+
+  &__link {
+    display: grid;
+    font-size: 1.1rem;
+    padding: 0.7rem 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    color: $text-color;
+    @include transition-mix;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+
+  &__foot {
+    padding: 2rem 1.5rem 200px 1.5rem;
+    font-size: 12px;
+  }
+}
+
+@for $f from 1 through 13 {
+  .menu-nav__item:nth-child(#{$f}) {
+    transition-delay: ($f * 0.1s) + 0.05s;
+  }
+}

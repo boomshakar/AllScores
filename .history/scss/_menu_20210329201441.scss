@@ -1,0 +1,42 @@
+.menu-btn {
+  position: fixed;
+  width: 28px;
+  height: 3px;
+  top: 1rem;
+  right: 0.3rem;
+  background: red;
+  cursor: pointer;
+  @include transition-mix;
+  &__burger {
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background: pink;
+    border-radius: 5px;
+    @include transition-mix;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 28px;
+      height: 3px;
+      top: -8px;
+      background: $text-color;
+      border-radius: 5px;
+      @include transition-mix;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 28px;
+      height: 3px;
+      top: 8px;
+      background: $text-color;
+      border-radius: 5px;
+      @include transition-mix;
+    }
+
+    &.open
+  }
+}

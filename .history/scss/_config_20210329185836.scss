@@ -1,0 +1,16 @@
+$primary-color: #24303a;
+$secondary-color: #e8584f;
+$text-color: #8e8da8;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");

@@ -1,0 +1,9 @@
+@import "config";
+@import "menu";
+@import "home";
+@import "responsive";
+
+body {
+  background-color: $primary-color;
+  height: 100vh;
+}

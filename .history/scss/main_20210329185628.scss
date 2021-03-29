@@ -1,0 +1,10 @@
+@import "config";
+@import "menu";
+@import "home";
+@import "responsive";
+
+body {
+  background: $primary-color;
+  height: 100vh;
+  font-family: "Roboto", "Segoe UI", Tahoma, Verdana, sans-serif;
+}

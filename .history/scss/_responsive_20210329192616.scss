@@ -1,0 +1,13 @@
+header {
+  .head-name__logo {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+
+    .material-icons {
+      font-size: 2.5rem;
+      align-items: center;
+      cursor: pointer;
+    }
+  }
+}
