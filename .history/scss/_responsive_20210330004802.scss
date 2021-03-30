@@ -1,0 +1,361 @@
+@include media-xxsm {
+  header {
+    .head-name__logo {
+      display: flex;
+      flex-direction: row;
+      cursor: pointer;
+      &:hover > .material-icons {
+        color: $text-color;
+      }
+
+      .material-icons {
+        font-size: 2.5rem;
+        align-items: center;
+        cursor: pointer;
+        @include transition-mix;
+      }
+      h1 {
+        font-weight: 800;
+        border-left: 1px solid $text-color;
+        line-height: 1.3rem;
+        padding: 0 0.5rem;
+        font-size: 1.1rem;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@include media-xsm {
+  header {
+    .head-name__logo {
+      display: flex;
+      flex-direction: row;
+      cursor: pointer;
+      height: 2.5rem;
+      &:hover > .material-icons {
+        color: $text-color;
+      }
+
+      .material-icons {
+        font-size: 2.5rem;
+        align-items: center;
+        cursor: pointer;
+        @include transition-mix;
+      }
+      h1 {
+        font-weight: 800;
+        border-left: 1px solid $text-color;
+        line-height: 1.3rem;
+        padding: 0 0.5rem;
+        font-size: 1.1rem;
+        cursor: pointer;
+      }
+    }
+    ul.head-name {
+      display: flex;
+      flex-direction: row;
+      margin-right: 2rem;
+      &.open {
+        visibility: hidden;
+      }
+
+      .head-name__mob {
+        border-left: 1px solid $text-color2;
+        padding: 0 0.2rem;
+        text-align: center;
+        width: 3rem;
+        @include transition-mix;
+        &.active {
+          background: linear-gradient(
+            to right,
+            rgba(#fff, 0.3),
+            rgba(#fff, 0.1)
+          );
+          color: $text-color;
+          border-radius: 5px;
+          border-left: 1px solid $text-color;
+        }
+        &:hover > .material-icons {
+          color: $text-color;
+        }
+      }
+      .material-icons {
+        font-size: 1rem;
+        cursor: pointer;
+        @include transition-mix;
+      }
+      h3 {
+        font-size: 0.7rem;
+      }
+    }
+    .menu-btn {
+      right: -0.3rem;
+    }
+  }
+}
+
+@include media-sm {
+  header {
+    .head-name__logo {
+      display: flex;
+      flex-direction: row;
+      cursor: pointer;
+      height: 2.5rem;
+      &:hover > .material-icons {
+        color: $text-color;
+      }
+
+      .material-icons {
+        font-size: 2.5rem;
+        align-items: center;
+        cursor: pointer;
+        @include transition-mix;
+      }
+      h1 {
+        font-weight: 800;
+        border-left: 1px solid $text-color;
+        line-height: 1.3rem;
+        padding: 0 0.5rem;
+        font-size: 1.1rem;
+        cursor: pointer;
+      }
+    }
+    ul.head-name {
+      display: flex;
+      flex-direction: row;
+      margin-right: 2rem;
+      &.open {
+        visibility: hidden;
+      }
+
+      .head-name__mob {
+        border-left: 1px solid $text-color2;
+        padding: 0 0.5rem;
+        text-align: center;
+        width: 3.3rem;
+        &.active {
+          background: linear-gradient(
+            to right,
+            rgba(#fff, 0.3),
+            rgba(#fff, 0.1)
+          );
+          color: $text-color;
+          border-radius: 5px;
+          border-left: 1px solid $text-color;
+        }
+        &:hover > .material-icons {
+          color: $text-color;
+        }
+      }
+      .material-icons {
+        font-size: 1.3rem;
+        cursor: pointer;
+        @include transition-mix;
+      }
+      h3 {
+        font-size: 0.8rem;
+      }
+    }
+    .menu-btn {
+      right: 0.3rem;
+    }
+  }
+}
+
+@include media-smd {
+  header {
+    .head-name__logo {
+      display: flex;
+      flex-direction: row;
+      cursor: pointer;
+      &:hover > .material-icons {
+        color: $text-color;
+      }
+
+      .material-icons {
+        font-size: 3rem;
+        align-items: center;
+        cursor: pointer;
+        @include transition-mix;
+      }
+      h1 {
+        font-weight: 800;
+        border-left: 1px solid $text-color;
+        line-height: 1.5rem;
+        padding: 0 0.5rem;
+        font-size: 1.4rem;
+        cursor: pointer;
+      }
+    }
+    ul.head-name {
+      display: flex;
+      flex-direction: row;
+      margin-right: 2rem;
+      &.open {
+        visibility: hidden;
+      }
+
+      .head-name__mob {
+        border-left: 1px solid $text-color2;
+        padding: 0 0.3rem;
+        text-align: center;
+        width: 3.4rem;
+        @include transition-mix;
+        &.active {
+          background: linear-gradient(
+            to right,
+            rgba(#fff, 0.3),
+            rgba(#fff, 0.1)
+          );
+          color: $text-color;
+          border-radius: 5px;
+          border-left: 1px solid $text-color;
+        }
+        &:hover > .material-icons {
+          color: $text-color;
+        }
+      }
+      .material-icons {
+        font-size: 1.7rem;
+        cursor: pointer;
+        @include transition-mix;
+      }
+      h3 {
+        font-size: 0.8rem;
+      }
+    }
+    .menu-btn {
+      top: 1.2rem;
+      right: 0.4rem;
+    }
+  }
+}
+
+@include media-md {
+  header {
+    .head-name__logo {
+      display: flex;
+      flex-direction: row;
+      cursor: pointer;
+      &:hover > .material-icons {
+        color: $text-color;
+      }
+
+      .material-icons {
+        font-size: 3rem;
+        align-items: center;
+        cursor: pointer;
+        @include transition-mix;
+      }
+      h1 {
+        font-weight: 800;
+        border-left: 1px solid $text-color;
+        line-height: 1.5rem;
+        padding: 0 0.5rem;
+        font-size: 1.7rem;
+        cursor: pointer;
+      }
+    }
+    ul.head-name {
+      display: flex;
+      flex-direction: row;
+      margin-right: 5rem;
+      &.open {
+        visibility: hidden;
+      }
+
+      .head-name__mob {
+        border-left: 1px solid $text-color2;
+        padding: 0 0.5rem;
+        text-align: center;
+        width: 3.8rem;
+        &.active {
+          background: linear-gradient(
+            to right,
+            rgba(#fff, 0.3),
+            rgba(#fff, 0.1)
+          );
+          color: $text-color;
+          border-radius: 5px;
+          border-left: 1px solid $text-color;
+        }
+        &:hover > .material-icons {
+          color: $text-color;
+        }
+      }
+      .material-icons {
+        font-size: 1.7rem;
+        cursor: pointer;
+        @include transition-mix;
+      }
+      h3 {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+@include media-lg {
+  header {
+    .head-name__logo {
+      display: flex;
+      flex-direction: row;
+      cursor: pointer;
+      &:hover > .material-icons {
+        color: $text-color;
+      }
+
+      .material-icons {
+        font-size: 2.5rem;
+        align-items: center;
+        cursor: pointer;
+        @include transition-mix;
+      }
+      h1 {
+        font-weight: 800;
+        border-left: 1px solid $text-color;
+        line-height: 1.3rem;
+        padding: 0 0.5rem;
+        font-size: 1.1rem;
+        cursor: pointer;
+      }
+    }
+    ul.head-name {
+      display: flex;
+      flex-direction: row;
+      margin-right: 2rem;
+      &.open {
+        visibility: hidden;
+      }
+
+      .head-name__mob {
+        border-left: 1px solid $text-color2;
+        padding: 0 0.5rem;
+        text-align: center;
+        width: 4rem;
+        &.active {
+          background: linear-gradient(
+            to right,
+            rgba(#fff, 0.3),
+            rgba(#fff, 0.1)
+          );
+          color: $text-color;
+          border-radius: 5px;
+          border-left: 1px solid $text-color;
+        }
+        &:hover > .material-icons {
+          color: $text-color;
+        }
+      }
+      .material-icons {
+        font-size: 1.3rem;
+        cursor: pointer;
+        @include transition-mix;
+      }
+      h3 {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

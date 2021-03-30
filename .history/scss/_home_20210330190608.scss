@@ -1,0 +1,168 @@
+.grid-contain {
+  padding: 3.4rem 0.1rem 1.5rem 0.1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(auto-fit, minmax(10px, 1fr));
+
+  .card {
+    background: darken($primary-color, 10%);
+    border: 1px solid #333;
+    color: #fff;
+
+    &:nth-child(1) {
+      //date selector
+      grid-column: 1 / 1;
+      grid-row: 1/ 2;
+      .date-select {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        &__link {
+          color: $text-color2;
+          padding: 0.3rem 0.5rem;
+          text-transform: uppercase;
+          text-align: center;
+          align-content: center;
+          justify-self: center;
+          width: 13vw;
+
+          &:nth-child(1) > .live-logo {
+            color: #333;
+            background: $text-color2;
+            border-radius: 5px;
+            padding: 3px;
+            width: max-content;
+          }
+        }
+        &__match {
+          font-size: 0.7rem;
+          width: max-content;
+          .material-icons {
+            font-size: 0.6rem;
+            width: max-content;
+          }
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      //left side
+      // grid-column: 1;
+      // grid-row: 3 / 4;
+      visibility: hidden;
+    }
+
+    &:nth-child(3) {
+      //main menu
+      grid-column: 1;
+      grid-row: 2 / 3;
+      padding: 1rem 0;
+      overflow: hidden;
+
+      h1 {
+        text-align: center;
+      }
+
+      .matches-table {
+        display: flex;
+        flex-direction: column;
+
+        .match-tile {
+          border-bottom: 1px solid rgb(167, 166, 166);
+          display: flex;
+          flex-direction: row;
+          &:nth-child(1) {
+            border-top: 1px solid rgb(167, 166, 166);
+          }
+          .match-timer {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-content: flex-start;
+            font-size: 1rem;
+            margin-right: 1rem;
+            padding-left: 1rem;
+            border-left: 5px solid $secondary-color;
+          }
+          .match-team {
+            .team {
+              display: flex;
+              flex-direction: row;
+              width: 83.8vw;
+              img {
+                width: 20px;
+                height: 20px;
+              }
+              p {
+                display: flex;
+                flex-direction: row;
+              }
+              .pteam {
+                width: 100vw;
+                padding-left: 1rem;
+              }
+              .pscore {
+                width: 10vw;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+              }
+            }
+          }
+        }
+
+        .match-info {
+          display: flex;
+          flex-direction: row;
+          .logo-name {
+            display: flex;
+            flex-direction: row;
+            text-align: left;
+            width: max($numbers: 100vw);
+            background: rgba(239, 231, 240, 0.144);
+            img {
+              width: 30px;
+              height: 30px;
+            }
+            .league-name {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              font-size: 0.8rem;
+              align-items: left;
+            }
+          }
+        }
+      }
+    }
+
+    &:nth-child(4) {
+      //right side
+      // grid-column: 1;
+      // grid-row: 4 / 5;
+      visibility: hidden;
+    }
+
+    &:nth-child(5) {
+      //stciky ad below
+      // grid-column: 1;
+      // grid-row: 3 / 4;
+      position: fixed;
+      bottom: 0;
+      right: 25%;
+      left: 25%;
+      opacity: 0.55;
+      padding: 1rem 2rem;
+    }
+
+    &:nth-child(6) {
+      //footer
+      grid-column: 1;
+      grid-row: 3 / 4;
+      padding: 1rem 2rem;
+      padding-bottom: 2.3rem;
+    }
+  }
+}

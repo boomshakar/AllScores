@@ -1,0 +1,73 @@
+.grid-contain {
+  padding: 3.4rem 0.1rem 1.5rem 0.1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  .card {
+    background: darken($primary-color, 10%);
+    border: 1px solid #333;
+    color: #fff;
+
+    &:nth-child(1) {
+      //date selector
+      grid-column: 1 / 1;
+      grid-row: 1/ 2;
+      .date-select {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        &__link {
+          color: $text-color2;
+          padding: 0.3rem 1rem;
+          text-transform: uppercase;
+          text-align: center;
+          align-content: center;
+          justify-self: center;
+          &:nth-child(1) > .live-logo {
+            color: #333;
+            background: $text-color2;
+            border-radius: 5px;
+            padding: 5px;
+          }
+        }
+        &__match {
+          font-size: 1rem;
+          .material-icons {
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      //left side
+      grid-column: 1;
+      grid-row: 3 / 4;
+    }
+
+    &:nth-child(3) {
+      //main menu
+      grid-column: 1;
+      grid-row: 2 / 3;
+      padding: 1rem;
+    }
+
+    &:nth-child(4) {
+      //right side
+      grid-column: 1;
+      grid-row: 4 / 5;
+    }
+
+    &:nth-child(5) {
+      //stciky ad below
+      grid-column: 1;
+      grid-row: 5 / 6;
+    }
+
+    &:nth-child(6) {
+      //footer
+      grid-column: 1;
+      grid-row: 6 / 7;
+    }
+  }
+}

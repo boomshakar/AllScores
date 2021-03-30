@@ -1,0 +1,30 @@
+@import "config";
+@import "menu";
+@import "home";
+@import "responsive";
+
+body {
+  position: relative;
+  background: $primary-color;
+  color: $text-color;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Roboto", "Segoe UI", Tahoma, Verdana, sans-serif;
+  line-height: 1;
+}
+
+header {
+  display: flex;
+  z-index: 2;
+  background: linear-gradient(to right, rgba(#000, 0.7), rgba(#000, 0.1)),
+    url(../img/head.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  width: 100vw;
+  padding-top: 0.3rem;
+
+  a {
+    color: $secondary-color;
+  }
+}

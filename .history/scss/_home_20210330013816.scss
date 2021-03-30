@@ -1,0 +1,5 @@
+.grid-contain {
+  padding: 3.5rem 0.2rem 1.5rem 0.2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
