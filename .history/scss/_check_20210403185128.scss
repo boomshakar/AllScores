@@ -1,0 +1,75 @@
+.matches-table {
+  display: none;
+  flex-direction: column;
+
+  .match-tile {
+    border-bottom: 1px solid rgb(167, 166, 166);
+    display: flex;
+    flex-direction: row;
+    &:nth-child(1) {
+      border-top: 1px solid rgb(167, 166, 166);
+    }
+    .match-timer {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      align-content: flex-start;
+      font-size: 1rem;
+      margin-right: 0.5rem;
+      padding-left: 0.5rem;
+      width: 8%;
+      border-left: 5px solid $secondary-color;
+    }
+    .match-team {
+      .team {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        img {
+          width: 20px;
+          height: 20px;
+        }
+        .pteam {
+          width: 100%;
+          padding-left: 1rem;
+          padding-top: 0.2rem;
+        }
+      }
+    }
+    .match-score {
+      position: absolute;
+      left: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .pscore {
+        padding: 0.1rem 1rem;
+      }
+    }
+  }
+
+  .match-info {
+    display: flex;
+    flex-direction: row;
+    .logo-name {
+      display: flex;
+      flex-direction: row;
+      text-align: left;
+      width: 100%;
+      background: $backtop;
+      img {
+        width: 30px;
+        height: 30px;
+      }
+      .league-name {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 0.8rem;
+        align-items: left;
+        margin-left: 00.7rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,176 @@
+.grid-contain {
+  padding: 3.4rem 0.1rem 1.5rem 0.1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-content: center;
+  position: absolute;
+
+  .card {
+    background: darken($primary-color, 10%);
+    border: 1px solid #333;
+    color: #fff;
+
+    &:nth-child(1) {
+      //navlink header selector
+      visibility: hidden;
+      display: none;
+    }
+
+    &:nth-child(2) {
+      //date selector
+      visibility: hidden;
+      display: none;
+    }
+
+    &:nth-child(3) {
+      //left side
+      visibility: hidden;
+      display: none;
+    }
+
+    &:nth-child(4) {
+      //main menu
+      grid-column: 1 / 1;
+      grid-row: 1 / 2;
+      padding: 0 0 1rem 0;
+
+      .date-select {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+
+        &__link {
+          color: $text-color2;
+          padding: 0.3rem 0.5rem;
+          text-transform: uppercase;
+          text-align: center;
+          width: 14%;
+        }
+        &__match {
+          font-size: 0.7rem;
+          text-align: center;
+          .live-logo {
+            color: #333;
+            background: $text-color2;
+            border-radius: 5px;
+            padding: 0 3px;
+            text-align: center;
+            font-weight: 600;
+          }
+          .material-icons {
+            font-size: 0.6rem;
+          }
+        }
+      }
+      h1 {
+        text-align: center;
+        margin-top: 1rem;
+      }
+
+      .matches-table {
+        display: flex;
+        flex-direction: column;
+
+        .match-tile {
+          border-bottom: 1px solid rgb(167, 166, 166);
+          display: flex;
+          flex-direction: row;
+          &:nth-child(1) {
+            border-top: 1px solid rgb(167, 166, 166);
+          }
+          .match-timer {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-content: flex-start;
+            font-size: 1rem;
+            margin-right: 0.5rem;
+            padding-left: 0.5rem;
+            width: 8%;
+            border-left: 5px solid $secondary-color;
+          }
+          .match-team {
+            .team {
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              img {
+                width: 20px;
+                height: 20px;
+              }
+              .pteam {
+                width: 100%;
+                padding-left: 1rem;
+                padding-top: 0.2rem;
+              }
+            }
+          }
+          .match-score {
+            position: absolute;
+            left: 93%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .pscore {
+              padding: 0.1rem 1rem;
+            }
+          }
+        }
+
+        .match-info {
+          display: flex;
+          flex-direction: row;
+          .logo-name {
+            display: flex;
+            flex-direction: row;
+            text-align: left;
+            width: 100%;
+            background: rgba(239, 231, 240, 0.144);
+            img {
+              width: 30px;
+              height: 30px;
+            }
+            .league-name {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              font-size: 0.8rem;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+
+    &:nth-child(5) {
+      //right side
+      // grid-column: 1;
+      // grid-row: 4 / 5;
+      visibility: hidden;
+      display: none;
+    }
+
+    &:nth-child(6) {
+      //stciky ad below
+      // grid-column: 1;
+      // grid-row: 3 / 4;
+      position: fixed;
+      bottom: 0;
+      right: 25%;
+      left: 25%;
+      opacity: 0.55;
+      padding: 1rem 2rem;
+    }
+
+    &:nth-child(7) {
+      //footer
+      grid-column: 1 / 1;
+      grid-row: 2 / 3;
+      padding: 1rem 2rem;
+      padding-bottom: 2.3rem;
+    }
+  }
+}

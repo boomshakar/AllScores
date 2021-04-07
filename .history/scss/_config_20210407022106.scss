@@ -1,0 +1,70 @@
+$primary-color: #24303a;
+$secondary-color: #ff8a00;
+$text-color: #fae56f;
+$text-color2: #aaa;
+$backtop: #333;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+@mixin transition-mix {
+  transition: all 0.5s ease-in-out;
+}
+
+@mixin media-xxsm {
+  @media screen and (max-width: 313px) {
+    @content;
+    ul.head-name {
+      visibility: hidden;
+    }
+  }
+}
+
+@mixin media-xsm {
+  @media screen and (min-width: 314px) and (max-width: 359px) {
+    @content;
+  }
+}
+
+@mixin media-sm {
+  @media screen and (min-width: 360px) and (max-width: 399px) {
+    @content;
+  }
+}
+
+@mixin media-smd {
+  @media screen and (min-width: 400px) {
+    @content;
+  }
+}
+
+@mixin media-md {
+  @media screen and (min-width: 500px) and (max-width: 749px) {
+    @content;
+  }
+}
+
+@mixin media-lg {
+  @media screen and (min-width: 750px) {
+    @content;
+    body {
+      overflow-x: auto;
+    }
+  }
+}
+
+// @mixin media-xl {
+//   @media screen and (min-width: 1000px) {
+//     @content;
+//   }
+// }

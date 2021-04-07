@@ -1,0 +1,74 @@
+@import "config";
+@import "menu";
+@import "home";
+@import "responsive";
+
+body {
+  position: absolute;
+  background: $primary-color;
+  color: $text-color;
+  height: 100vh;
+  font-family: "Roboto", "Segoe UI", Tahoma, Verdana, sans-serif;
+  line-height: 1;
+  background: url(../img/stadium3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+header {
+  display: flex;
+  z-index: 2;
+  background: linear-gradient(to right, rgba(#000, 0.7), rgba(#000, 0.1)),
+    url(../img/head.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  width: 100vw;
+  padding-top: 0.3rem;
+
+  a {
+    color: $secondary-color;
+  }
+}
+
+.revad {
+  visibility: visible;
+  &.open {
+    visibility: hidden;
+  }
+
+  &-btn {
+    position: fixed;
+    width: 18px;
+    height: 18px;
+    bottom: 3rem;
+    left: 74%;
+    background: red;
+    border: 1px solid #000;
+    border-radius: 50%;
+    cursor: pointer;
+    visibility: visible;
+    &.open {
+      visibility: hidden;
+    }
+
+    &__burger {
+      position: absolute;
+      width: 16px;
+      height: 3px;
+      background: yellow;
+      transform: rotate(45deg) translate(4.5px, 5px);
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 3px;
+        background: pink;
+        transform: rotate(-90deg) translate(0.3px, 0px);
+      }
+    }
+  }
+}

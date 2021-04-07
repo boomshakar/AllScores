@@ -1,0 +1,643 @@
+@include media-xxsm {
+  header {
+    height: 2.8rem;
+    justify-content: space-between;
+    .head-name__logo {
+      display: flex;
+      flex-direction: row;
+      cursor: pointer;
+      &:hover > .material-icons {
+        color: $text-color;
+      }
+
+      .material-icons {
+        font-size: 2.5rem;
+        align-items: center;
+        cursor: pointer;
+        @include transition-mix;
+      }
+      h1 {
+        font-weight: 800;
+        border-left: 1px solid $text-color;
+        line-height: 1.3rem;
+        padding: 0 0.5rem;
+        font-size: 1.1rem;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@include media-xsm {
+  header {
+    justify-content: space-between;
+    .head-name__logo {
+      display: flex;
+      flex-direction: row;
+      cursor: pointer;
+      height: 2.5rem;
+      &:hover > .material-icons {
+        color: $text-color;
+      }
+
+      .material-icons {
+        font-size: 2.5rem;
+        align-items: center;
+        cursor: pointer;
+        @include transition-mix;
+      }
+      h1 {
+        font-weight: 800;
+        border-left: 1px solid $text-color;
+        line-height: 1.3rem;
+        padding: 0 0.5rem;
+        font-size: 1.1rem;
+        cursor: pointer;
+      }
+    }
+    ul.head-name {
+      display: flex;
+      flex-direction: row;
+      margin-right: 2rem;
+      &.open {
+        visibility: hidden;
+      }
+
+      .head-name__mob {
+        border-left: 1px solid $text-color2;
+        padding: 0 0.2rem;
+        text-align: center;
+        width: 3rem;
+        @include transition-mix;
+        &.active {
+          background: linear-gradient(
+            to right,
+            rgba(#fff, 0.3),
+            rgba(#fff, 0.1)
+          );
+          color: $text-color;
+          border-radius: 5px;
+          border-left: 1px solid $text-color;
+        }
+        &:hover > .material-icons {
+          color: $text-color;
+        }
+      }
+      .material-icons {
+        font-size: 1.3rem;
+        cursor: pointer;
+        @include transition-mix;
+      }
+      h3 {
+        font-size: 0.7rem;
+      }
+    }
+    .menu-btn {
+      right: -0.3rem;
+    }
+  }
+}
+
+@include media-sm {
+  header {
+    justify-content: space-between;
+    .head-name__logo {
+      display: flex;
+      flex-direction: row;
+      cursor: pointer;
+      height: 2.5rem;
+      &:hover > .material-icons {
+        color: $text-color;
+      }
+
+      .material-icons {
+        font-size: 2.5rem;
+        align-items: center;
+        cursor: pointer;
+        @include transition-mix;
+      }
+      h1 {
+        font-weight: 800;
+        border-left: 1px solid $text-color;
+        line-height: 1.3rem;
+        padding: 0 0.5rem;
+        font-size: 1.1rem;
+        cursor: pointer;
+      }
+    }
+    ul.head-name {
+      display: flex;
+      flex-direction: row;
+      margin-right: 2rem;
+      &.open {
+        visibility: hidden;
+      }
+
+      .head-name__mob {
+        border-left: 1px solid $text-color2;
+        padding: 0 0.5rem;
+        text-align: center;
+        width: 3.3rem;
+        &.active {
+          background: linear-gradient(
+            to right,
+            rgba(#fff, 0.3),
+            rgba(#fff, 0.1)
+          );
+          color: $text-color;
+          border-radius: 5px;
+          border-left: 1px solid $text-color;
+        }
+        &:hover > .material-icons {
+          color: $text-color;
+        }
+      }
+      .material-icons {
+        font-size: 1.3rem;
+        cursor: pointer;
+        @include transition-mix;
+      }
+      h3 {
+        font-size: 0.8rem;
+      }
+    }
+    .menu-btn {
+      right: 0.3rem;
+    }
+  }
+}
+
+@include media-smd {
+  header {
+    justify-content: space-between;
+    .head-name__logo {
+      display: flex;
+      flex-direction: row;
+      cursor: pointer;
+      &:hover > .material-icons {
+        color: $text-color;
+      }
+
+      .material-icons {
+        font-size: 3rem;
+        align-items: center;
+        cursor: pointer;
+        @include transition-mix;
+      }
+      h1 {
+        font-weight: 800;
+        border-left: 1px solid $text-color;
+        line-height: 1.5rem;
+        padding: 0 0.5rem;
+        font-size: 1.4rem;
+        cursor: pointer;
+      }
+    }
+    ul.head-name {
+      display: flex;
+      flex-direction: row;
+      margin-right: 2rem;
+      &.open {
+        visibility: hidden;
+      }
+
+      .head-name__mob {
+        border-left: 1px solid $text-color2;
+        padding: 0 0.3rem;
+        text-align: center;
+        width: 3.4rem;
+        @include transition-mix;
+        &.active {
+          background: linear-gradient(
+            to right,
+            rgba(#fff, 0.3),
+            rgba(#fff, 0.1)
+          );
+          color: $text-color;
+          border-radius: 5px;
+          border-left: 1px solid $text-color;
+        }
+        &:hover > .material-icons {
+          color: $text-color;
+        }
+      }
+      .material-icons {
+        font-size: 1.7rem;
+        cursor: pointer;
+        @include transition-mix;
+      }
+      h3 {
+        font-size: 0.8rem;
+      }
+    }
+    .menu-btn {
+      top: 1.2rem;
+      right: 0.4rem;
+    }
+  }
+}
+
+@include media-md {
+  header {
+    justify-content: space-between;
+    .head-name__logo {
+      display: flex;
+      flex-direction: row;
+      cursor: pointer;
+      &:hover > .material-icons {
+        color: $text-color;
+      }
+
+      .material-icons {
+        font-size: 3rem;
+        align-items: center;
+        cursor: pointer;
+        @include transition-mix;
+      }
+      h1 {
+        font-weight: 800;
+        border-left: 1px solid $text-color;
+        line-height: 1.5rem;
+        padding: 0 0.5rem;
+        font-size: 1.7rem;
+        cursor: pointer;
+      }
+    }
+    ul.head-name {
+      display: flex;
+      flex-direction: row;
+      margin-right: 5rem;
+      &.open {
+        visibility: hidden;
+      }
+
+      .head-name__mob {
+        border-left: 1px solid $text-color2;
+        padding: 0 0.5rem;
+        text-align: center;
+        width: 3.8rem;
+        @include transition-mix;
+        &.active {
+          background: linear-gradient(
+            to right,
+            rgba(#fff, 0.3),
+            rgba(#fff, 0.1)
+          );
+          color: $text-color;
+          border-radius: 5px;
+          border-left: 1px solid $text-color;
+        }
+        &:hover > .material-icons {
+          color: $text-color;
+        }
+      }
+      .material-icons {
+        font-size: 1.7rem;
+        cursor: pointer;
+        @include transition-mix;
+      }
+      h3 {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+@include media-lg {
+  header {
+    justify-content: space-evenly;
+    .head-name__logo {
+      display: flex;
+      flex-direction: row;
+      cursor: pointer;
+      margin-right: 8rem;
+      &:hover > .material-icons {
+        color: $text-color;
+      }
+
+      .material-icons {
+        font-size: 3rem;
+        align-items: center;
+        cursor: pointer;
+        @include transition-mix;
+      }
+      h1 {
+        font-weight: 800;
+        border-left: 1px solid $text-color;
+        line-height: 1.5rem;
+        padding: 0 0.5rem;
+        font-size: 1.7rem;
+        cursor: pointer;
+      }
+    }
+    ul.head-name {
+      display: flex;
+      flex-direction: row;
+      &.open {
+        visibility: hidden;
+      }
+
+      .head-name__mob {
+        border-left: 1px solid $text-color2;
+        padding: 0 0.3rem;
+        text-align: center;
+        width: 3.8rem;
+        &.active {
+          background: linear-gradient(
+            to right,
+            rgba(#fff, 0.3),
+            rgba(#fff, 0.1)
+          );
+          color: $text-color;
+          border-radius: 5px;
+          border-left: 1px solid $text-color;
+        }
+        &:hover > .material-icons {
+          color: $text-color;
+        }
+      }
+      .material-icons {
+        font-size: 1.7rem;
+        cursor: pointer;
+        @include transition-mix;
+      }
+      h3 {
+        font-size: 0.8rem;
+      }
+    }
+    .menu-btn {
+      visibility: hidden;
+    }
+  }
+  .grid-contain {
+    padding: 3.4rem 3rem 1.5rem 3rem;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr) minmax(0, 1.3fr);
+    grid-auto-rows: max-content;
+    position: absolute;
+
+    .card {
+      background: darken($primary-color, 10%);
+      border: 1px solid #333;
+      color: #fff;
+
+      &:nth-child(1) {
+        //dLogo banner
+        grid-column: 1 / 4;
+        grid-row: 1/ 2;
+      }
+
+      &:nth-child(2) {
+        //left side
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        visibility: visible;
+      }
+
+      &:nth-child(3) {
+        //main menu
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        padding: 1rem 0;
+        .date-select {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+
+          &__link {
+            color: $text-color2;
+            padding: 0.3rem 0.5rem;
+            text-transform: uppercase;
+            text-align: center;
+            align-content: center;
+            justify-self: center;
+            width: 13vw;
+
+            &:nth-child(1) > .live-logo {
+              color: #333;
+              background: $text-color2;
+              border-radius: 5px;
+              padding: 3px;
+              width: max-content;
+            }
+          }
+          &__match {
+            font-size: 0.7rem;
+            width: max-content;
+            .material-icons {
+              font-size: 0.6rem;
+              width: max-content;
+            }
+          }
+        }
+
+        h1 {
+          text-align: center;
+        }
+
+        .matches-table {
+          display: flex;
+          flex-direction: column;
+
+          .match-tile {
+            border-bottom: 1px solid rgb(167, 166, 166);
+            display: flex;
+            flex-direction: row;
+            &:nth-child(1) {
+              border-top: 1px solid rgb(167, 166, 166);
+            }
+            .match-timer {
+              display: flex;
+              flex-direction: column;
+              text-align: center;
+              justify-content: center;
+              align-content: flex-start;
+              font-size: 1rem;
+              margin-right: 0.5rem;
+              padding-left: 0.5rem;
+              width: 50px;
+              border-left: 5px solid $secondary-color;
+            }
+            .match-team {
+              .team {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                img {
+                  width: 20px;
+                  height: 20px;
+                }
+                .pteam {
+                  width: 60vw;
+                  padding-left: 1rem;
+                  padding-top: 0.2rem;
+                }
+              }
+            }
+            .match-score {
+              position: absolute;
+              right: 23rem;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              .pscore {
+                padding: 0.1rem 1rem;
+              }
+            }
+          }
+
+          .match-info {
+            display: flex;
+            flex-direction: row;
+            .logo-name {
+              display: flex;
+              flex-direction: row;
+              text-align: left;
+              width: 100vw;
+              background: rgba(239, 231, 240, 0.144);
+              img {
+                width: 30px;
+                height: 30px;
+              }
+              .league-name {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                font-size: 0.8rem;
+                align-items: left;
+              }
+            }
+          }
+        }
+      }
+
+      &:nth-child(4) {
+        //right side
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+        visibility: visible;
+        display: inline-grid;
+        grid-template-columns: minmax(0, 1fr);
+        grid-auto-rows: minmax(min-content, max-content);
+
+        .nested-card {
+          background: lighten($primary-color, 5%);
+          border: 1px solid rgb(167, 166, 166);
+          color: #fff;
+          padding: 1rem 2rem;
+
+          &:nth-child(2) {
+            grid-column: 1;
+            grid-row: 2 / 3;
+
+            h1 {
+              text-align: center;
+            }
+            table,
+            th,
+            td {
+              border: 1px solid black;
+              border-collapse: collapse;
+            }
+            th,
+            td {
+              padding: 5px;
+              text-align: left;
+            }
+            table {
+              width: 100%;
+            }
+            td {
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+
+      &:nth-child(5) {
+        //stciky ad below
+        // grid-column: 1;
+        // grid-row: 3 / 4;
+        position: fixed;
+        bottom: 0;
+        right: 25%;
+        left: 25%;
+        opacity: 0.55;
+        padding: 1rem 2rem;
+      }
+
+      &:nth-child(6) {
+        //footer
+        grid-column: 1 / 4;
+        grid-row: 3 / 4;
+        padding: 1rem 2rem;
+        padding-bottom: 2.3rem;
+      }
+    }
+  }
+}
+
+@include media-xl {
+  header {
+    justify-content: space-evenly;
+    .head-name__logo {
+      display: flex;
+      flex-direction: row;
+      cursor: pointer;
+      margin-right: 8rem;
+      &:hover > .material-icons {
+        color: $text-color;
+      }
+
+      .material-icons {
+        font-size: 3rem;
+        align-items: center;
+        cursor: pointer;
+        @include transition-mix;
+      }
+      h1 {
+        font-weight: 800;
+        border-left: 1px solid $text-color;
+        line-height: 1.5rem;
+        padding: 0 0.5rem;
+        font-size: 1.7rem;
+        cursor: pointer;
+      }
+    }
+    ul.head-name {
+      display: flex;
+      flex-direction: row;
+      &.open {
+        visibility: hidden;
+      }
+
+      .head-name__mob {
+        border-left: 1px solid $text-color2;
+        padding: 0 0.3rem;
+        text-align: center;
+        width: 3.8rem;
+        &.active {
+          background: linear-gradient(
+            to right,
+            rgba(#fff, 0.3),
+            rgba(#fff, 0.1)
+          );
+          color: $text-color;
+          border-radius: 5px;
+          border-left: 1px solid $text-color;
+        }
+        &:hover > .material-icons {
+          color: $text-color;
+        }
+      }
+      .material-icons {
+        font-size: 1.7rem;
+        cursor: pointer;
+        @include transition-mix;
+      }
+      h3 {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
