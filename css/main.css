@@ -929,7 +929,8 @@ nav {
                 background: rgba(239, 231, 240, 0.144); }
                 .over-grid .grid-contain .card:nth-child(4) .matches-table-desk .match-info .logo-name img {
                   width: 30px;
-                  height: 30px; }
+                  height: 30px;
+                  border-radius: 50%; }
                 .over-grid .grid-contain .card:nth-child(4) .matches-table-desk .match-info .logo-name .league-name {
                   display: -webkit-box;
                   display: -ms-flexbox;
@@ -942,7 +943,8 @@ nav {
                       -ms-flex-pack: center;
                           justify-content: center;
                   font-size: 0.8rem;
-                  font-weight: 600; }
+                  font-weight: 600;
+                  margin-left: 10px; }
             .over-grid .grid-contain .card:nth-child(4) .matches-table-desk .match-tile-desk {
               border-bottom: 1px solid #a7a6a6;
               display: -webkit-box;

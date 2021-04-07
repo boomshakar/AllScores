@@ -205,7 +205,7 @@ fetch("https://v3.football.api-sports.io/fixtures?live=all", {
   method: "GET",
   headers: {
     "x-rapidapi-host": "v3.football.api-sports.io",
-    "x-rapidapi-key": "63548dd709dbcfe8bc4da3e64a0f2c18",
+    // "x-rapidapi-key": "63548dd709dbcfe8bc4da3e64a0f2c18",
   },
 })
   .then((response) =>

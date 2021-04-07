@@ -205,7 +205,7 @@ fetch("https://v3.football.api-sports.io/fixtures?live=all", {
   method: "GET",
   headers: {
     "x-rapidapi-host": "v3.football.api-sports.io",
-    "x-rapidapi-key": "63548dd709dbcfe8bc4da3e64a0f2c18",
+    // "x-rapidapi-key": "63548dd709dbcfe8bc4da3e64a0f2c18",
   },
 })
   .then((response) =>
@@ -283,28 +283,29 @@ fetch("https://v3.football.api-sports.io/standings?league=39&season=2020", {
 
 var countryOption = document.querySelector("#country-option");
 
-function addCountryList(data) {
+function addCountryList1(data) {
   var countryList = document.createElement("li");
   countryList.classList.add("country-option-list");
-  countryList.innerHTML = data["name"];
+  countryList.innerHTML = data["country"];
 
   countryOption.appendChild(countryList);
 }
 
-fetch("https://v3.football.api-sports.io/countries", {
+fetch("https://api-football-v1.p.rapidapi.com/v2/countries", {
   method: "GET",
   headers: {
-    "x-rapidapi-host": "v3.football.api-sports.io",
-    "x-rapidapi-key": "63548dd709dbcfe8bc4da3e64a0f2c18",
+    "x-rapidapi-key": "f3666f333cmsh302b5634d41171bp1f5ceajsn7e396f7db55c",
+    // "x-rapidapi-host": "api-football-v1.p.rapidapi.com",
   },
 })
   .then((response) =>
     response.json().then((data) => {
       console.log(data);
-      var countryList = data["response"];
+      var countryList1 = data["api"]["countries"];
+      var countryList2 = data["api"]["countries"][1];
 
-      for (var i = 0; i < countryList.length; i++) {
-        addCountryList(countryList[i]);
+      for (var i = 0; i < countryList1.length; i++) {
+        addCountryList1(countryList1[i]);
       }
     })
   )
